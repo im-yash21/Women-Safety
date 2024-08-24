@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 1s;
+}
+
+nav h1 {
+    display: inline-block;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.676);
+    padding: 20px;
+    text-align: right;
+    width: 1470px;
+    position: fixed;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-right: 40px;
+}
+
+#Login {
+    font-size: large;
+    border-radius: 3px;
+    padding: 5px 5px 5px 5px;
+    border: 0px;
+    background-color: rgb(169, 18, 98);
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#Login:hover {
+    background-color: rgb(248, 9, 136)
+}
+
+#logo {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: inline;
+    margin-right: 800px;
+}
+
+nav a:hover {
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+
+#profile {
+    display: none;
+    transition: all 2s;
+    padding-top: 70px;
+    background: burlywood;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+summary {
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+details {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+header {
+    padding-top: 80px;
+    background-color: burlywood;
+}
+
+.modi {
+    display: flex;
+}
+
+.modi div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.modi h1 {
+    text-align: center;
+    display: inline;
+    font-size: 85px;
+}
+
+.modi div p {
+    font-family: monospace;
+    font-size: 23px;
+}
+
+header img {
+    width: 50%;
+}
+
+#Text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+#Text::before {
+    content: 'W';
+    color: white;
+    opacity: 50%;
+    font-size: 125px;
+}
+
+.rpt {
+    background-color: rgb(0, 120, 147);
+}
+
+.rpt h1 {
+    font-family: "Andes", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.rpt h1::before {
+    content: 'IS WOMEN SAFE';
+    background-color: #75f3fa;
+    border-radius: 8px;
+}
+
+.rpt p {
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.rpt img {
+    width: 50%;
+    height: 700px;
+}
+
+#pic_image {
+    display: flex;
+}
+
+#Mission {
+    background-color: lightcoral;
+}
+
+#Mission p {
+    padding: 0px 30px;
+}
+
+#Mission h1 {
+    color: black;
+}
+
+#Mission hr {
+    margin: 10px;
+    height: 2px;
+}
+
+.mission_image {
+    display: flex;
+}
+
+.miss_img {
+    width: 25%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.miss_img:hover {
+    width: 26%
+}
+
+#Mission h1 {
+    padding-left: 40px;
+    font-size: 100px;
+}
+
+hr {
+    margin: 30px;
+    height: 2px;
+    background-color: black;
+    border-radius: 3px;
+    border: 0px;
+}
+
+#Mission p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.statement {
+    padding: 40px;
+}
+
+#Work {
+    background: white;
+}
+
+#Work h1 {
+    padding: 10px 0px 0px 30px;
+    font-size: 100px;
+}
+
+.work_detail h3 {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.work_detail p {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.w_left {
+    padding: 10px 50px 50px 30px;
+    text-align: center;
+    width: 50%;
+}
+
+.work_detail {
+    display: flex;
+}
+
+.w_right {
+    padding: 10px 50px 50px 30px;
+    text-align: center;
+    width: 50%;
+}
+
+footer {
+    background-color: black;
+}
+
+footer h4 {
+    padding: 30px;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: x-large;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#popup {
+    display: none;
+}
+
+#popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+#popup,
+#popup-1,
+#popup-2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(210, 209, 209);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 300px;
+}
+
+#popup-2 {
+    display: none;
+}
+
+#popup-1 h2 {
+    text-align: center;
+}
+
+#popup-1 h2,
+label,
+button,
+p {
+    color: black;
+    opacity: 100%;
+}
+
+#popup-1 h2:hover,
+label:hover,
+button:hover {
+    opacity: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#popup-1 button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#popup-1 button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#popup-1 p a {
+    color: #bc2578;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#popup-1 p a:hover {
+    color: #fc1192;
+    text-decoration: underline;
+}
+
+#popup-2 button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#popup-2 button:hover {
+    background-color: #0056b3;
+}
+
+#popup-2 h2 {
+    text-align: center;
+}
+
+#popup-2 label {
+    margin-top: 10px;
+}
+
+#popup p {
+    font-size: large;
+}
+
+#ok-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ok-btn:hover {
+    background-color: #0056b3;
+}
